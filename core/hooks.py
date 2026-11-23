@@ -8,7 +8,7 @@ class HookDenied(Exception):
 
 
 ROOT = Path(__file__).resolve().parent.parent
-SETTINGS = ROOT / ".claude" / "settings.local.json"
+SETTINGS = ROOT / ".claude" / "settings.json"
 TOOL_PREFIX = "mcp__app__"  # so matchers like "mcp__.*" apply
 
 

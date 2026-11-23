@@ -1,0 +1,45 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node -e \"console.log('Answer in Spanish unless I speak to you in English; then answer in English.')\""
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "mcp__app__refund_resources",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node .claude/hooks/refund-guard.js"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__app__read_doc_contents",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node .claude/hooks/lower-input.js"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "mcp__app__get_current_date|mcp__app__get_ISO_string",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node .claude/hooks/format-date.js"
+          }
+        ]
+      }
+    ]
+  }
+}
