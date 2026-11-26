@@ -9,7 +9,7 @@
 - `mcp_client.py`: async wrapper over `ClientSession`.
 - `core/chat.py` / `cli_chat.py`: tool-use loop; `@doc` injects content, `/cmd doc_id` runs an MCP prompt.
 - `core/tools.py`: routes tool calls to the first client that owns the tool, wrapped by hooks.
-- `core/hooks.py`: in-app Claude Code-style hooks read from `.claude/settings.local.json` (exit 2 = block; tools prefixed `mcp__app__`).
+- `core/hooks.py`: in-app Claude Code-style hooks read from `.claude/settings.json` (exit 2 = block; tools prefixed `mcp__app__`).
 
 ## Rules
 

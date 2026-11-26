@@ -1,0 +1,6 @@
+{"ts":"2026-11-19T17:37:03.367Z","reason":"Refund of $550 exceeds the $500 limit.","tool_input":{"amount":550}}
+{"ts":"2026-11-20T17:44:16.040Z","reason":"Refund of $501 exceeds the $500 limit.","tool_input":{"amount":501}}
+{"ts":"2026-11-20T23:56:48.178Z","reason":"Refund of $600 exceeds the $500 limit.","tool_input":{"amount":600}}
+{"ts":"2026-11-20T23:58:17.704Z","reason":"Refund of $600 exceeds the $500 limit.","tool_input":{"amount":600}}
+{"ts":"2026-11-20T23:59:12.218Z","reason":"Refund of $600 exceeds the $500 limit.","tool_input":{"amount":600}}
+{"ts":"2026-11-23T17:55:40.182Z","reason":"Refund of $600 exceeds the $500 limit.","tool_input":{"amount":600}}
